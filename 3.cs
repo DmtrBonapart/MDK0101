@@ -1,14 +1,30 @@
-// double sum = 0;
-// //ввожу температуру за каждый день недели
-// for (int i = 1; i <= 7; i++)
+// int[] numbers = new int[100];
+// int count = 0;
+// bool repeat = false;
+// //ввожу числа в массив
+// while (!repeat)
 // {
-//     Console.Write($"введи темпу за {i} день: ");
-//     //перевожу текст в число
-//     double temp = Convert.ToDouble(Console.ReadLine());
-//     //добавляю темпу к общей сумме
-//     sum += temp;
+//     Console.Write("введи число: ");
+//     int number = Convert.ToInt32(Console.ReadLine());
+//     //проверяю встречалось ли число раньше
+//     for (int i = 0; i < count; i++)
+//     {
+//         if (numbers[i] == number)
+//         {
+//             repeat = true;
+//             break;
+//         }
+//     }
+//     //добавляю число если не повторяется
+//     if (!repeat)
+//     {
+//         numbers[count] = number;
+//         count++;
+//     }
 // }
-// //считаю среднюю за неделю
-// double average = sum / 7;
-
-// Console.WriteLine($"средняя температура: {average}");
+// //вывожу массив
+// Console.WriteLine("массив:");
+// for (int i = 0; i < count; i++)
+// {
+//     Console.Write($"{numbers[i]} ");
+// }
